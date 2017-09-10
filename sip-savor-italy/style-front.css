@@ -1,0 +1,793 @@
+/*
+	Theme Name: Hello Serendipitous
+	Theme URI: https://helloyoudesigns.com
+	Description: A mobile responsive and HTML5 feminine WordPress theme built for the Genesis Framework by Hello You Designs
+	Author: Hello You Designs
+	Author URI: https://helloyoudesigns.com/
+	Copyright: Copyright (c) 2016, Hello You Designs
+	Version: 1.0.2
+
+	Template: genesis
+	Template Version: 2.2.2
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+/* Front Page
+---------------------------------------------------------------------------------------------------- */
+.front-page .site-inner {
+	margin: 0 auto 30px;
+	padding: 20px 0px;
+}
+
+.front-page .entry-header {
+	margin-bottom: 0;
+}
+
+.front-page .entry-header::after {
+	display: none;
+}
+
+.front-page .icon {
+	color: #ff6666;
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.front-page .content .entry, .journal .entry {
+    border-bottom: none;
+    float: left;
+    overflow: hidden;
+    padding: 1.5%;
+    width: 33.3333%;
+}
+
+.front-page .blog {
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+
+.front-page .widget-title {
+	font-size: 40px;
+	font-size: 4.0rem;
+	font-family: 'Cormorant Upright', serif;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: none;
+}
+
+.front-page .entry-title {
+	font-size: 20px;
+	font-size: 2.0rem;
+	line-height: 1.3;
+	text-align: center;
+}
+
+
+/* Image Sections
+--------------------------------------------- */
+
+.image-section-1,
+.image-section-2,
+.image-section-3  {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	overflow: hidden;
+	table-layout: fixed;
+	margin: 0 auto;
+}
+
+	.image-section-1 .widget-area,
+	.image-section-2 .widget-area,
+	.image-section-3 .widget-area  {
+		padding: 100px 20px 60px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	.image-section-1,
+	.image-section-2,
+	.image-section-3 {
+		background-attachment: fixed;
+		background-color: #fff;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size:    cover;
+		background-size:         cover;
+	}
+
+	.image-section button,
+	.image-section input[type="button"],
+	.image-section input[type="reset"],
+	.image-section input[type="submit"],
+	.image-section .textwidget a.button {
+		background: #333;
+		border: 1px solid #fff;
+		outline: 1px solid #eee;
+		color: #fff;
+		padding: 15px 25px;
+	}
+
+	.image-section button:focus,
+	.image-section button:hover,
+	.image-section input:focus[type="button"],
+	.image-section input:hover[type="button"],
+	.image-section input:focus[type="reset"],
+	.image-section input:hover[type="reset"],
+	.image-section input:focus[type="submit"],
+	.image-section input:hover[type="submit"],
+	.image-section .textwidget a.button:focus,
+	.image-section .textwidget a.button:hover {
+		background-color: #e4cbcd;
+		border: 1px solid #fff;
+		outline: 1px solid #eee;
+		color: #333;
+	}
+
+.imagebutton {
+	border: 3px solid #333;
+	background: rgba(251,251,251,.75);
+	color: #333;
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-size: 2.0rem;
+	letter-spacing: 3px;
+	padding: 24px 75px;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.imagebutton:hover {
+  border: 3px solid #333;
+	background-color: #e4cbcd;
+	color: #fff;
+}
+
+
+.image-section .typed-me {
+	 color: #333;
+   font-size: 50px;
+	 font-size: 5.0rem;
+	 font-family: 'Cormorant Upright', serif;
+   letter-spacing: 3.5px;
+	 line-height: 1.5;
+	 text-transform: uppercase;
+}
+
+
+/* Flexible Widgets
+--------------------------------------------- */
+
+.flexible-widgets .widget {
+	float: left;
+	margin-bottom: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.flexible-widgets .widget:first-child {
+	border: none;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.flexible-widgets.widget-full .widget,
+.flexible-widgets.widget-area .widget:nth-of-type(1),
+.flexible-widgets.widget-halves.uneven .widget:last-of-type {
+	width: 100%;
+}
+
+.flexible-widgets.widget-fourths .widget {
+	width: 25%;
+}
+
+.flexible-widgets.widget-halves .widget {
+	width: 50%;
+}
+
+.flexible-widgets.widget-thirds .widget {
+	width: 33.33%;
+}
+
+.flexible-widgets.widget-halves .widget:nth-child(even),
+.flexible-widgets.widget-thirds .widget:nth-child(3n+2),
+.flexible-widgets.widget-fourths .widget:nth-child(4n+2) {
+	clear: left;
+}
+
+/* Home Badge
+-------------------------------------------------*/
+
+.home-badge {
+  margin: -105px auto -40px;
+	width: 1200px;
+  transition: all 1s;
+  z-index: 9;
+}
+
+.home-badge img{
+  	max-height: 150px;
+  	max-width: 150px;
+		position: relative;
+		z-index: 9;
+		margin-left: -55px;
+}
+
+.home-badge img:hover {
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+}
+
+
+/* Soliloquy
+--------------------------------------------- */
+
+/* Full width Soliloquy slider
+------------------------------------- */
+
+/* To get rid of -4px bottom margin for image links */
+a img {
+	margin-bottom: 0;
+}
+
+/* To avoid noticeable vertical movement for hover state of Soliloquy's Control Nav (typically circles) */
+.soliloquy-container .soliloquy-control-nav li a,
+.soliloquy-theme-classic .soliloquy-pager-link {
+	-webkit-transition: none;
+	-moz-transition:    none;
+	-ms-transition:     none;
+	-o-transition:      none;
+	transition:         none;
+}
+
+/* To remove bottom border for Soliloquy controls */
+.entry-content .soliloquy-controls-direction a, .entry-content a.soliloquy-pager-link {
+	border-bottom: none;
+}
+
+.home-slider {
+	border: 1px solid #eee;
+  clear: both;
+	margin: 0px auto 20px;
+	padding: 10px;
+	width: 1200px;
+}
+
+.home-slider .soliloquy-container .soliloquy-image {
+	width: 100% !important;
+}
+
+.home-slider .soliloquy-container .soliloquy-caption-inside {
+	padding: 30px;
+}
+
+.home-slider .soliloquy-container .slide-caption {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.home-slider .soliloquy-container .soliloquy-pager {
+	right: 10px;
+	bottom: 20px;
+	float: right;
+	width: auto;
+}
+
+
+/* Soliloquy Captions
+------------------------------------- */
+
+.soliloquy-container .soliloquy-prev,
+.soliloquy-container .soliloquy-next {
+	display: none !important;
+}
+
+.soliloquy-caption-inside {
+    background: rgba(251,251,251,.85) !important;
+    border: 2px solid #eee!important;
+		outline: 7px solid rgba(251,251,251,.5) !important;
+	  color: #555 !important;
+		font-size: 2.0rem !important;
+    line-height: 1.5 !important;
+    padding: 20px 0px !important;
+    text-shadow: none !important;
+}
+
+.soliloquy-container .soliloquy-caption {
+    width: 50% !important;
+    margin-left: 25% !important;
+    margin-bottom: 8% !important;
+    background: none !important;
+		padding: 2% !important;
+}
+
+.soliloquy-container .soliloquy-caption h2 {
+	  font-family: 'Cormorant Upright', serif;
+	  font-size: 3.0rem !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
+.soliloquy-container .soliloquy-caption h3 {
+	font-family: 'Cormorant Upright', serif;
+	font-size: 1.6rem !important;
+	line-height: 2 !important;
+	text-align: center !important;
+	text-transform: uppercase;
+	letter-spacing: 3px !important;
+}
+
+
+.soliloquy-container .soliloquy-caption a.soliloquy-button {
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+		background: #333;
+	  border: 1px solid #fff;
+	  outline: 1px solid #eee;
+	  color: #fff;
+    margin: 12px auto 0;
+    padding: 10px 20px !important;
+    font-size: 12px !important;
+    font-style: normal !important;
+    overflow: auto !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+}
+
+.soliloquy-container .soliloquy-caption a.soliloquy-button:hover {
+	background: #e4cbcd !important;
+  border: 1px solid #fff !important;
+  outline: 1px solid #eee !important;
+  color: #333 !important;
+}
+
+@media only screen and (max-width: 1280px) {
+
+	.soliloquy-container .soliloquy-caption {
+		  width: 40% !important;
+		  margin-left: 30% !important;
+		  font-size: 1.2rem !important;
+	    margin-bottom: 5% !important;
+	}
+
+}
+
+	@media only screen and (max-width: 1023px) {
+
+		.soliloquy-container .soliloquy-caption {
+		    width: 60% !important;
+		    margin-left: 20% !important;
+		    margin-bottom: 2% !important;
+		}
+	}
+
+	@media only screen and (max-width: 700px) {
+		.soliloquy-container .soliloquy-caption {
+		    width: 80% !important;
+		    margin-left: 10% !important;
+		}
+}
+
+@media only screen and (max-width: 600px) {
+	.soliloquy-container .soliloquy-caption {
+			display: none !important;
+	}
+}
+
+/* Home Widgets
+--------------------------------------------- */
+
+.home-cta {
+	margin: 0 auto 40px;
+	padding: 30px 20px;
+	width: 1200px;
+}
+
+.home-welcome {
+	margin: 0 auto;
+	padding: 0 40px 40px;
+}
+
+.home-flexible,
+.home-close {
+	margin: 0 auto;
+	padding: 100px 40px;
+}
+
+.home-welcome .flexible-widgets .widget:first-child,
+.home-flexible .flexible-widgets .widget:first-child,
+.home-close .flexible-widgets .widget:first-child   {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.home-welcome h1,
+.home-flexible h1,
+.home-close h1 {
+	color: #ddc885;
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+
+
+.accent-text {
+    position: relative;
+    margin-top: 30px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 10px;
+		font-size: 1.0rem;
+		text-transform: uppercase;
+}
+
+.accent-text div {
+    padding: 0 10px 20px;
+    margin-top: -20px;
+}
+
+.accent-text h1 {
+	  color: #fae7df;
+    margin: 0;
+    line-height: .5;
+    font-style: italic;
+    font-size: 100px;
+		font-size: 10.0rem;
+    pointer-events: none;
+    text-align: center;
+		position: relative;
+    z-index: -1;
+}
+.accent-text h4 {
+	margin-bottom: 10px;
+	z-index: 9;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.accent-text h1 {
+	    font-size: 75px;
+			font-size: 7.5rem;
+	}
+
+	.accent-text h4 {
+		font-size: 16px;
+		font-size: 1.6rem;
+	}
+}
+
+/* Home grid Titles on hover
+------------------------------------*/
+
+.home-welcome .entry-header::after {
+	display: none;
+}
+
+.home-welcome .alignnone {
+	margin-bottom: 0;
+}
+
+.home-welcome .featured-content img {
+	vertical-align: top;
+	-webkit-transition:  all .2s linear;
+	-moz-transition:  all .2s linear;
+	-o-transition:  all .2s linear;
+	transition:  all .2s linear;
+}
+
+.home-welcome .entry-header {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+.home-welcome .widget .entry {
+	position: relative;
+	background: #fff;
+}
+
+.home-welcome .entry-title a {
+	color: #333;
+	font-family: 'Cormorant Upright', serif;
+	font-size: 30px;
+	font-size: 3.0rem;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.home-welcome .featured-content .entry {
+	padding-bottom: 0;
+}
+
+.home-welcome .widget .entry:hover .entry-header {
+	opacity: 1;
+}
+
+.home-welcome .widget .entry:hover img {
+	opacity: 0.3;
+}
+
+@media only screen and (max-width: 1024px) {
+
+.home-welcome .entry-title a {
+		font-family: 'Cormorant Upright', serif;
+		font-size: 25px;
+		font-size: 2.5rem;
+		letter-spacing: 0;
+		text-transform: none;
+	}
+
+}
+
+/* Home Widgets
+--------------------------------------------- */
+.home-featured {
+	margin: auto;
+	padding: 100px 0;
+	text-align: center;
+	max-width: 100%;
+}
+
+.home-featured .widget-area {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.home-featured .enews-widget {
+	width: 1050px;
+	margin: 0 auto;
+}
+
+
+/* Journal
+--------------------------------------------- */
+
+.journal .widget-title {
+	text-align: center;
+}
+
+/* Front Page enews-widget
+----------------------------------- */
+
+.image-section .enews-widget,
+.home-cta .enews-widget  {
+	padding: 0 20px;
+}
+
+.image-section .enews-widget .widget-title,
+.home-cta .enews-widget .widget-title  {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-section .enews-widget p,
+.home-cta .enews-widget p {
+    color: #656565;
+    float: left;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.4;
+    padding: 4px 20px 0 0;
+    text-align: left;
+    text-transform: uppercase;
+    width: 34.61538461538462%;
+}
+
+.image-section  .enews #subbox1,
+.home-cta  .enews #subbox1  {
+      margin-left: 0;
+  }
+
+.image-section .enews input,
+.home-cta .enews input  {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 1.5% !important;
+    width: 23.076923076923077%;
+}
+
+.image-section .enews-widget input[type="submit"],
+.home-cta .enews-widget input[type="submit"] {
+  margin-left: 2.5%;
+  padding: 13px 20px;
+  width: auto;
+}
+
+/* Media Queries
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+
+	.home-welcome,
+	.home-close,
+	.site-footer {
+	  max-width: 100%;
+	  padding: 30px 20px;
+ }
+
+	 .home-slider,
+	 .home-cta {
+		 max-width: 800px;
+	 }
+
+	 .home-badge {
+		 width: 900px;
+	 }
+}
+
+@media only screen and (max-width: 800px) {
+
+ .home-badge img {
+	 margin-left: 0px;
+ }
+
+	.flexible-widgets .widget {
+		border: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.front-page .enews-widget p {
+	    padding: 10px 40px;
+	    width: 100%;
+	}
+
+	.front-page .enews input  {
+	    width: 32%;
+	}
+	.front-page .enews-widget input[type="submit"] {
+		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.flexible-widgets.widget-fourths .widget,
+	.flexible-widgets.widget-halves .widget,
+	.flexible-widgets.widget-thirds .widget,
+	.front-page-2 .flexible-widgets.widget-halves .widget,
+	.front-page-2 .widget {
+		float: none;
+		width: 100%;
+		padding: 5px 20px;
+	}
+
+	.home-slider,
+	.home-cta {
+		max-width: 600px;
+	}
+
+	.soliloquy-container .soliloquy-caption {
+		display: none;
+	}
+
+	.home-badge {
+		width: 700px;
+	}
+	.front-page .content .entry, .journal .entry {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 610px) {
+
+	.home-slider,
+	.home-cta {
+		max-width: 500px;
+	}
+
+	.home-badge {
+		width: 575px;
+		margin: -75px auto -30px;
+	}
+
+	.home-badge img{
+		width: 100px;
+		height: 100px;
+	}
+
+	.front-page .widget-title {
+		font-size: 24px;
+		font-size: 2.4rem;
+	}
+
+.image-section .typed-me {
+	font-size: 30px;
+font-size: 3.0rem;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	.home-slider,
+	.home-cta {
+		max-width: 350px;
+	}
+
+	.home-badge {
+		width: 100px;
+	}
+
+.front-page .content .entry, .journal .entry {
+	width: 100% !important;
+}
+}
+
+
+
+/* ipad 3 and 4 */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .image-section-1,
+    .image-section-2,
+    .image-section-3 {
+        background-attachment: scroll;
+    }
+}
+/* ipad 1, 2, and ipad mini */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .image-section-1,
+    .image-section-2,
+    .image-section-3 {
+        background-attachment: scroll;
+    }
+}
+/* iphone 6 plus */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+    .image-section-1,
+    .image-section-2,
+    .image-section-3 {
+        background-attachment: scroll;
+    }
+}
+/* iphone 6 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+    .image-section-1,
+    .image-section-2,
+    .image-section-3 {
+        background-attachment: scroll;
+    }
+}
+/* iphone 5 and 5s */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .image-section-1,
+    .image-section-2,
+    .image-section-3 {
+        background-attachment: scroll;
+    }
+}
